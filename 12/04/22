@@ -1,0 +1,189 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "12/4/22",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM97OhGTqwPzN1AqPZZiOQU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AMRUTH122010304026/AMRUTH122010304026/blob/main/12/04/22\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "BxkpncZbQL1E"
+      },
+      "outputs": [],
+      "source": [
+        "Python Program to Print all Prime Numbers in an Interval"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lower = int(input(\"enter number\"))\n",
+        "upper = int(input(\"enter number\"))\n",
+        "\n",
+        "print(\"prime numbers between\",lower,\"and\",upper,\"are:\")\n",
+        "\n",
+        "for num in range (lower,upper + 1):\n",
+        "  #all prime numbers are grater than 1\n",
+        "  if num > 1:\n",
+        "      for i in range(2, num):\n",
+        "           if (num % i) == 0:\n",
+        "               break\n",
+        "      else:\n",
+        "         print (num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gr46_NXkSmyY",
+        "outputId": "42ae8992-0c57-4c8b-d313-028d7958b926"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter number500\n",
+            "enter number900\n",
+            "prime numbers between 500 and 900 are:\n",
+            "503\n",
+            "509\n",
+            "521\n",
+            "523\n",
+            "541\n",
+            "547\n",
+            "557\n",
+            "563\n",
+            "569\n",
+            "571\n",
+            "577\n",
+            "587\n",
+            "593\n",
+            "599\n",
+            "601\n",
+            "607\n",
+            "613\n",
+            "617\n",
+            "619\n",
+            "631\n",
+            "641\n",
+            "643\n",
+            "647\n",
+            "653\n",
+            "659\n",
+            "661\n",
+            "673\n",
+            "677\n",
+            "683\n",
+            "691\n",
+            "701\n",
+            "709\n",
+            "719\n",
+            "727\n",
+            "733\n",
+            "739\n",
+            "743\n",
+            "751\n",
+            "757\n",
+            "761\n",
+            "769\n",
+            "773\n",
+            "787\n",
+            "797\n",
+            "809\n",
+            "811\n",
+            "821\n",
+            "823\n",
+            "827\n",
+            "829\n",
+            "839\n",
+            "853\n",
+            "857\n",
+            "859\n",
+            "863\n",
+            "877\n",
+            "881\n",
+            "883\n",
+            "887\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Multiplication table (from 1 to 10) in Python\n",
+        "num = 13\n",
+        "\n",
+        "# TO take input from the user\n",
+        "# num = int(input(\"Display multiplication table of? \"))\n",
+        "\n",
+        "# Iterate 10 times from i = 1 to 10\n",
+        "for i in range(1, 11):\n",
+        "   print(num, 'x', i, '=', num*i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N0mdxotjakU9",
+        "outputId": "4a4e6155-1ec1-4000-f48f-9a304178bfc7"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13 x 1 = 13\n",
+            "13 x 2 = 26\n",
+            "13 x 3 = 39\n",
+            "13 x 4 = 52\n",
+            "13 x 5 = 65\n",
+            "13 x 6 = 78\n",
+            "13 x 7 = 91\n",
+            "13 x 8 = 104\n",
+            "13 x 9 = 117\n",
+            "13 x 10 = 130\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "R5zyFgfzfZVF"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
